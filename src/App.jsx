@@ -9,6 +9,7 @@ import Contact from './components/contact/Contact'
 import Product from './components/products/Product'
 import Banner from './components/banner/Banner'
 import Tool from './components/tools/Tools'
+import Analytics from './components/Analytics'
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
     <AboutSection />
     <Contact />
     <Tool/>
+    <Analytics />
     </div>
    
     

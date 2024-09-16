@@ -5,6 +5,7 @@ import { MdClose } from "react-icons/md";
 import { navLinksdata } from '../constants/index';
 import { Link } from "react-scroll";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import Modal from './custom ui/Modal';
 
 
 const Header = () => {
@@ -27,8 +28,8 @@ const Header = () => {
        <div className='space-x-4'>
 
        <button className="bg-orange-200 px-6 py-3 rounded-[30px]">Login</button>
-        <button className="bg-orange-500 text-white border border-white px-6 py-3 rounded-[30px]">Get Started</button>
-       
+        {/* <button className="bg-orange-500 text-white border border-white px-6 py-3 rounded-[30px]">Contact Sales</button> */}
+       <Modal />
        </div>
        
       <span
