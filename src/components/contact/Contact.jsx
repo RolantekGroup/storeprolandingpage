@@ -56,7 +56,7 @@ function Contact() {
      <div className='px- mt-8'>
             <h1 className='text-2xl text-white font-bold'>Dashboard</h1>
             <p className='text-lg text-white leading-1 pt-4'>A central hub where users can view and interact with key information,
-            data, and functionalities relevant to their account.</p>
+            data, and functionalities relevant to their account. </p>
         </div>
 
         <div className='rounded-[50px] mt-3 flex items-center justify-center '>
