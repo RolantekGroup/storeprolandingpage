@@ -6,7 +6,7 @@ const Media = () => {
     <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
         <div>
           <h2 className="text-base uppercase font-bold mb-4">
-            Find Us
+            Connect with us on
           </h2>
           <div className="flex gap-4">
             <span className="mediaIcon">

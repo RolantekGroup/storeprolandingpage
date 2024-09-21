@@ -1,107 +1,131 @@
 import React, { useState } from 'react';
-import logo from '../assets/images/R logo (orange).png'
+import logo from '../assets/images/R logo (orange).png';
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
-import { navLinksdata } from '../constants/index';
-import { Link } from "react-scroll";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import Modal from './custom ui/Modal';
 
-
 const Header = () => {
-  const [showMenu, setShowMenu]=useState(false)
+  const [showMenu, setShowMenu] = useState(false);
+
   return (
-    
     <header className="bg-white shadow-md">
       <nav className="container mx-auto flex justify-between items-center py-4 px-6">
-        <div className="text-2xl font-bold text-orange-500 flex ">
-            <img src={logo} width={28} alt="" className='pr-1' />
-            <span>OLANTEK</span> 
-            </div>
-        <ul className="hidden lg:flex space-x-6">
-          <li><a href="#about" className="hover:text-orange-500">Home</a></li>
-          <li><a href="#services" className="hover:text-orange-500">About </a></li>
-          <li><a href="#products" className="hover:text-orange-500">Blog</a></li>
-          <li><a href="#contact" className="hover:text-orange-500">Contact</a></li>
-          <li><a href="#contact" className="hover:text-orange-500">Page</a></li>
-        </ul>
-       <div className='space-x-4'>
+        {/* Logo */}
+        <div className="text-2xl font-bold text-orange-500 flex">
+          <img src={logo} width={28} alt="logo" className="pr-1" />
+          <span>OLANTEK</span>
+        </div>
 
-       <button className="bg-orange-200 px-6 py-3 rounded-[30px]">Login</button>
-        {/* <button className="bg-orange-500 text-white border border-white px-6 py-3 rounded-[30px]">Contact Sales</button> */}
-       <Modal />
-       </div>
-       
-      <span
+        {/* Navigation Links */}
+        <ul className="hidden lg:flex space-x-6">
+          {/* Products Dropdown */}
+          <li className="relative group">
+            <a href="#" className="hover:text-orange-500">Products</a>
+
+            {/* Dropdown Menu */}
+            <ul className="absolute hidden group-hover:block bg-white shadow-lg rounded-lg p-4 space-y-2 w-48 z-10">
+              <li>
+                <a href="/products/1" className="hover:text-orange-500 block">Product 1</a>
+              </li>
+              <li>
+                <a href="/products/2" className="hover:text-orange-500 block">Product 2</a>
+              </li>
+              <li>
+                <a href="/products/3" className="hover:text-orange-500 block">Product 3</a>
+              </li>
+             
+            </ul>
+          </li>
+
+          {/* Other Navigation Links */}
+          <li><a href="#about" className="hover:text-orange-500">About</a></li>
+          <li><a href="#services" className="hover:text-orange-500">Contact</a></li>
+          <li><a href="#contact" className="hover:text-orange-500">Page</a></li>
+          <li><a href="#page" className="hover:text-orange-500">Blog</a></li>
+        </ul>
+
+        {/* Buttons */}
+        <div className="space-x-4 flex ">
+          <button className="bg-orange-200 px-6 py-3  rounded-[30px]">Sign In</button>
+          <div className='hidden lg:block'>
+          <Modal />
+          </div>
+        </div>
+
+        {/* Mobile Menu Button */}
+        <span
           onClick={() => setShowMenu(!showMenu)}
-          className="text-xl lg:hidden bg-black w-10 h-10 inline-flex items-center justify-center rounded-full text-designColor cursor-pointer"
+          className="text-xl mdl:hidden bg-black w-10 h-10 inline-flex items-center justify-center rounded-full text-designColor cursor-pointer"
         >
           <FiMenu />
         </span>
+
+        {/* Mobile Menu */}
         {showMenu && (
           <div className="w-[80%] h-screen overflow-scroll absolute top-0 left-0 bg-gray-900 p-4 scrollbar-hide">
             <div className="flex flex-col gap-8 py-2 relative">
-              <div>
-                
-              <div className="text-2xl font-bold text-orange-500 flex ">
-            <img src={logo} width={28} alt="" className='pr-1' />
-            <span>OLANTEK</span> 
-            </div>
+              <div className="text-2xl font-bold text-orange-500 flex">
+                <img src={logo} width={28} alt="logo" className="pr-1" />
+                <span>OLANTEK</span>
               </div>
 
+              {/* Mobile Navigation Links */}
               <ul className="flex flex-col gap-4">
-                {navLinksdata.map((item) => (
-                  <li
-                    key={item._id}
-                    className="text-base font-normal text-white tracking-wide cursor-pointer hover:text-orange-500 duration-300"
-                  >
-                    <Link
-                      onClick={() => setShowMenu(false)}
-                      activeClass="active"
-                      to={item.link}
-                      spy={true}
-                      smooth={true}
-                      offset={-70}
-                      duration={500}
-                    >
-                      {item.title}
-                    </Link>
-                  </li>
+              <li className="relative group text-white">
+            <a href="#" className="hover:text-orange-500">Products</a>
 
-                  
-                ))}
+            {/* Dropdown Menu */}
+            <ul className="absolute hidden group-hover:block bg-gray-900 shadow-lg rounded-lg p-4 ml-[80px] space-y-4 w-48 z-10">
+              <li>
+                <a href="/products/1" className="hover:text-orange-500 block">Product 1</a>
+              </li>
+              <li>
+                <a href="/products/2" className="hover:text-orange-500 block">Product 2</a>
+              </li>
+              <li>
+                <a href="/products/3" className="hover:text-orange-500 block">Product 3</a>
+              </li>
+             
+            </ul>
+          </li>
+                <li className="text-base font-normal text-white tracking-wide cursor-pointer hover:text-orange-500 duration-300">
+                  <a href="#about">About</a>
+                </li>
+                <li className="text-base font-normal text-white tracking-wide cursor-pointer hover:text-orange-500 duration-300">
+                  <a href="#services">Blog</a>
+                </li>
+                <li className="text-base font-normal text-white tracking-wide cursor-pointer hover:text-orange-500 duration-300">
+                  <a href="#contact">Contact</a>
+                </li>
               </ul>
 
+              {/* Social Media Links */}
               <div>
-              <h2 className="text-base uppercase font-titleFont mb-4 text-white">
-                  Find Us
-                </h2>
-                    <span className="mediaIcon">
-                     <FaFacebookF />
-                    </span>
-                    <span className="mediaIcon">
-                    <FaTwitter />
-                    </span>
-                    <span className="mediaIcon">
-                    <FaLinkedinIn />
-                    </span>
-                    <span className="mediaIcon">
-                    <FaInstagram/>
-                    </span>
-                  </div>
-                  <span
+                <div className='flex justify-between'>
+                <h2 className="text-base font-titleFont mb-4 text-white">Connect with us on</h2>
+                <Modal />
+                </div>
+               
+                <span className="mediaIcon"><FaFacebookF /></span>
+                <span className="mediaIcon"><FaTwitter /></span>
+                <span className="mediaIcon"><FaLinkedinIn /></span>
+                <span className="mediaIcon"><FaInstagram /></span>
+              </div>
+
+              {/* Close Mobile Menu Button */}
+              <span
                 onClick={() => setShowMenu(false)}
                 className="absolute top-4 right-4 text-gray-400 hover:text-purple-500 duration-300 text-2xl cursor-pointer"
               >
                 <MdClose />
               </span>
-              </div>
-              </div>
-        )}  
-        </nav>
+            </div>
+          </div>
+        )}
+      </nav>
     </header>
-        
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

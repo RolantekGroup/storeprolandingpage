@@ -9,7 +9,7 @@ const Modal = () => {
   return (
     <Dialog.Root>
       <Dialog.Trigger asChild>
-        <button className="bg-orange-500 text-white border border-white px-6 py-3 rounded-[30px]">
+        <button className="bg-orange-500 text-white  px-3 py-3 rounded-[40px]">
           Contact Sales
         </button>
       </Dialog.Trigger>
