@@ -61,7 +61,7 @@ function Contact() {
 
         <div className='rounded-[50px] mt-3 flex items-center justify-center '>
         <img
-      className="px-8 h-64 min-w-[350px] md:h-72 md:min-w-[400px] lg:h-80  object-contain mb-2 cursor-pointer"
+      className="px- h-64 min-w-[310px] md:h-72 md:min-w-[400px] lg:h-80  object-contain mb- cursor-pointer"
       src={Histogram_charts}
       alt="contactImg"
     />

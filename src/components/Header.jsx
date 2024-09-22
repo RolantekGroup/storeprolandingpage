@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <header className="bg-white shadow-md">
-      <nav className="container mx-auto flex justify-between items-center py-4 px-6">
+      <nav className="container mx-auto flex justify-between mdl: items-center py-4 px-6">
         {/* Logo */}
         <div className="text-2xl font-bold text-orange-500 flex">
           <img src={logo} width={28} alt="logo" className="pr-1" />
@@ -46,20 +46,26 @@ const Header = () => {
         </ul>
 
         {/* Buttons */}
-        <div className="space-x-4 flex ">
-          <button className="bg-orange-200 px-6 py-3  rounded-[30px]">Sign In</button>
-          <div className='hidden lg:block'>
+        <div className="space-x- flex ">
+          <div className='hidden lg:block space-x-4'>
           <Modal />
+          <button className="bg-orange-200 px-6 py-3  rounded-[30px]">Sign In</button>
           </div>
         </div>
 
         {/* Mobile Menu Button */}
+        <div className='flex gap-2'>
+        <button className="bg-orange-200 px-6 py-3  rounded-[30px] lg:hidden mdl:block">Sign In</button>
         <span
           onClick={() => setShowMenu(!showMenu)}
-          className="text-xl mdl:hidden bg-black w-10 h-10 inline-flex items-center justify-center rounded-full text-designColor cursor-pointer"
+          className="text-xl lg:hidden bg-black w-10 h-10 inline-flex items-center justify-center rounded-full text-designColor cursor-pointer"
         >
           <FiMenu />
         </span>
+        
+
+        </div>
+      
 
         {/* Mobile Menu */}
         {showMenu && (
@@ -99,12 +105,17 @@ const Header = () => {
                   <a href="#contact">Contact</a>
                 </li>
               </ul>
+              <div className='flex gap-2'>
+              <Modal />
+              <button className="bg-orange-200 px-6 py-3 md:hidden block  rounded-[30px]">Sign In</button>
+              </div>
+             
 
               {/* Social Media Links */}
               <div>
                 <div className='flex justify-between'>
                 <h2 className="text-base font-titleFont mb-4 text-white">Connect with us on</h2>
-                <Modal />
+             
                 </div>
                
                 <span className="mediaIcon"><FaFacebookF /></span>
