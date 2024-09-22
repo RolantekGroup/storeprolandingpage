@@ -46,16 +46,16 @@ const Header = () => {
         </ul>
 
         {/* Buttons */}
-        <div className="space-x- flex ">
-          <div className='hidden lg:block space-x-4'>
+      
+          <div className='hidden lg:block space-x-2'>
           <Modal />
           <button className="bg-orange-200 px-6 py-3  rounded-[30px]">Sign In</button>
           </div>
-        </div>
+        
 
         {/* Mobile Menu Button */}
         <div className='flex gap-2'>
-        <button className="bg-orange-200 px-6 py-3  rounded-[30px] lg:hidden mdl:block">Sign In</button>
+        
         <span
           onClick={() => setShowMenu(!showMenu)}
           className="text-xl lg:hidden bg-black w-10 h-10 inline-flex items-center justify-center rounded-full text-designColor cursor-pointer"
