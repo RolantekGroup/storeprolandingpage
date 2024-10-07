@@ -74,9 +74,9 @@ const ContactSales = () => {
               className="border px-3 py-2 w-full rounded"
             >
               <option value="">Select a product</option>
-              <option value="product1">Product 1</option>
-              <option value="product2">Product 2</option>
-              <option value="product3">Product 3</option>
+              <option value="product1">StorePro desktop</option>
+              <option value="product2">StorePro web</option>
+              
             </Field>
             <ErrorMessage name="product" component="div" className="text-red-500 text-sm" />
           </div>
