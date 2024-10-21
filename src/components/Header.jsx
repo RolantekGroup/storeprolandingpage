@@ -24,14 +24,14 @@ const Header = () => {
 
             {/* Dropdown Menu */}
             <ul className="absolute hidden group-hover:block bg-white shadow-lg rounded-lg p-4 space-y-2 w-48 z-10">
-              <li>
+              {/* <li>
                 <a href="/products/1" className="hover:text-orange-500 block">Product 1</a>
+              </li> */}
+              <li>
+                <a href="/products/2" className="hover:text-orange-500 block">StorePro desktop</a>
               </li>
               <li>
-                <a href="/products/2" className="hover:text-orange-500 block">Product 2</a>
-              </li>
-              <li>
-                <a href="/products/3" className="hover:text-orange-500 block">Product 3</a>
+                <a href="/products/3" className="hover:text-orange-500 block">StorePro web</a>
               </li>
             </ul>
           </li>
@@ -72,14 +72,14 @@ const Header = () => {
 
                   {/* Dropdown Menu */}
                   <ul className="absolute hidden group-hover:block bg-gray-900 shadow-lg rounded-lg p-4 ml-[80px] space-y-4 w-48 z-10">
-                    <li>
+                    {/* <li>
                       <a href="/products/1" className="hover:text-orange-500 block">Product 1</a>
+                    </li> */}
+                    <li>
+                      <a href="/products/2" className="hover:text-orange-500 block">StorePro desktop</a>
                     </li>
                     <li>
-                      <a href="/products/2" className="hover:text-orange-500 block">Product 2</a>
-                    </li>
-                    <li>
-                      <a href="/products/3" className="hover:text-orange-500 block">Product 3</a>
+                      <a href="/products/3" className="hover:text-orange-500 block">StorePro web</a>
                     </li>
                   </ul>
                 </li>
