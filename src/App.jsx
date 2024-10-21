@@ -10,6 +10,7 @@ import Product from './components/products/Product'
 import Banner from './components/banner/Banner'
 import Tool from './components/tools/Tools'
 import Analytics from './components/Analytics'
+import NewsletterBox from './components/newsletter/Newsletter'
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
     <Contact />
     <Tool/>
     <Analytics />
+    <NewsletterBox />
     </div>
    
     
