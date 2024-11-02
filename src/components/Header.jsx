@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from '../assets/images/R logo (orange).png';
+import logo from '../assets/images/Brandmark Vertical.png';
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
@@ -9,18 +9,18 @@ const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <header className="bg-white shadow-md">
+    <header className="bg-white shadow-md h-[100px]">
       <nav className="container mx-auto flex justify-between items-center py-4 px-6">
         {/* Logo */}
         <div className="text-2xl font-bold text-orange-500 flex items-center">
-          <img src={logo} width={28} alt="logo" className="pr-1" />
-          <span>OLANTEK</span>
+          <img src={logo} width={60} alt="logo" className="pl-1" />
+          <span className='mr-8'>POLARIS</span>
         </div>
 
         {/* Navigation Links */}
         <ul className="hidden lg:flex space-x-6 items-center justify-center flex-1">
           <li className="relative group">
-            <a href="#" className="hover:text-orange-500">Products</a>
+            <a href="/" className="hover:text-orange-500">Products</a>
 
             {/* Dropdown Menu */}
             <ul className="absolute hidden group-hover:block bg-white shadow-lg rounded-lg p-4 space-y-2 w-48 z-10">
@@ -35,9 +35,9 @@ const Header = () => {
               </li>
             </ul>
           </li>
-          <li><a href="#about" className="hover:text-orange-500">About</a></li>
-          <li><a href="#services" className="hover:text-orange-500">Contact</a></li>
-          <li><a href="#page" className="hover:text-orange-500">Blog</a></li>
+          <li><a href="/about" className="hover:text-orange-500">About</a></li>
+          <li><a href="/contact" className="hover:text-orange-500">Contact</a></li>
+          <li><a href="/blog" className="hover:text-orange-500">Blog</a></li>
         </ul>
 
         {/* Buttons */}

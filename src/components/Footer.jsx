@@ -24,7 +24,7 @@ function Footer() {
                 </div>
                 
                   
-                  <div className=' grid grid-cols-1 ml-14 mt-5 lgl:grid-cols-3 md:grid-cols-2 gap-2'>
+                  <div className=' grid grid-cols-1 ml-14 mt-5 lgl:grid-cols-2 md:grid-cols-2 gap-2'>
                        {/* <div className='bg-red-500'>  */}
                          {middleList.map((item) => (
                         <FooterList
