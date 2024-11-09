@@ -14,7 +14,7 @@ const Header = () => {
         {/* Logo */}
         <div className="text-2xl font-bold text-orange-500 flex items-center">
           <img src={logo} width={60} alt="logo" className="pl-1" />
-          <span className='mr-8'>POLARIS</span>
+          
         </div>
 
         {/* Navigation Links */}
