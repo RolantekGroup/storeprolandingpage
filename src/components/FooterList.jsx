@@ -1,22 +1,20 @@
-import React from 'react'
+import React from 'react';
 
-function FooterList({title,listItem}) {
-    return (
-        <>
-        <div>
-        <h3 className="font-titleFont text-white text-base font-semibold mb-3">
-        {title}
-      </h3>
-      <ul className="flex flex-col gap-2 font-bodyFont">
-        {listItem.map((item) =>
-          item.listData.map((data,i) => <li key={i} className="footerLink">{data}</li>)
-        )}
-      </ul>
-        </div>
-        
-        
-        </>
-    )
-}
+const FooterList = ({ title, listItem }) => (
+  <div>
+    <h4 className='font-bold text-orange-400'>{title}</h4>
+    <ul>
+      {listItem.map((item) =>
+        item.listData.map((data) => (
+          <li key={data.text}>
+            <a href={data.url} className="text-gray-300 hover:underline"  rel="noopener noreferrer">
+              {data.text}
+            </a>
+          </li>
+        ))
+      )}
+    </ul>
+  </div>
+);
 
-export default FooterList
+export default FooterList;
