@@ -9,7 +9,8 @@ const AboutSection = () => {
   return (
     <div className='border-b-[1px] border-b-black py-11'>
       <h1 className='flex justify-center text-center font-bold text-xl'>
-        Used by the world's most average companies
+      Trusted by Smart Retailers Who Stay Ahead of the
+      Market
       </h1>
       <div className='grid grid-cols-2 items-center justify-center gap-5 mx-8 mt-8 opacity-20 md:grid-cols-5 lg:justify-between'>
         <img src={Network_image} alt="Network" className='w-full h-auto max-w-[150px] mb-4' />
