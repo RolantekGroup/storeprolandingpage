@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import logo from '../assets/images/Brandmark Horizontal.png';
+import logo2 from '../assets/images/Brandmark Horizontal 2.png';
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import Modal from './custom ui/Modal';
+import {Link} from 'react-router-dom';
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -12,10 +14,11 @@ const Header = () => {
     <header className="bg-white shadow-md h-[100px]">
       <nav className="container mx-auto flex justify-between items-center py-4 px-6">
         {/* Logo */}
-        <div className="text-2xl font-bold text-orange-500 flex items-center">
+        <Link to='/'>
+        <div className="text-2xl font-bold  flex items-center">
           <img src={logo} width={60} alt="logo" className="pl-1 h-16 w-auto" />
-          
         </div>
+        </Link>
 
         {/* Navigation Links */}
         <ul className="hidden lg:flex space-x-6 items-center justify-center flex-1">
@@ -60,15 +63,17 @@ const Header = () => {
         {showMenu && (
           <div className="w-[80%] h-screen overflow-scroll absolute top-0 left-0 bg-gray-900 p-4 scrollbar-hide">
             <div className="flex flex-col gap-8 py-2 relative">
+              <Link to= '/'>
               <div className="text-2xl font-bold text-orange-500 flex">
-                <img src={logo} width={28} alt="logo" className="pr-1" />
-                <span>OLANTEK</span>
+                <img src={logo2} width={60} alt="logo" className="pr-1 h-16 w-auto" />
               </div>
+               </Link>
+              
 
               {/* Mobile Navigation Links */}
               <ul className="flex flex-col gap-4">
                 <li className="relative group text-white">
-                  <a href="#" className="hover:text-orange-500">Products</a>
+                  <a href="/" className="hover:text-orange-500">Products</a>
 
                   {/* Dropdown Menu */}
                   <ul className="absolute hidden group-hover:block bg-gray-900 shadow-lg rounded-lg p-4 ml-[80px] space-y-4 w-48 z-10">
@@ -84,14 +89,15 @@ const Header = () => {
                   </ul>
                 </li>
                 <li className="text-base font-normal text-white tracking-wide cursor-pointer hover:text-orange-500 duration-300">
-                  <a href="#about">About</a>
+                  <a href="/about">About</a>
                 </li>
                 <li className="text-base font-normal text-white tracking-wide cursor-pointer hover:text-orange-500 duration-300">
-                  <a href="#services">Blog</a>
+                  <a href="/contact">Contact</a>
                 </li>
                 <li className="text-base font-normal text-white tracking-wide cursor-pointer hover:text-orange-500 duration-300">
-                  <a href="#contact">Contact</a>
+                  <a href="/blog">Blog</a>
                 </li>
+               
               </ul>
 
               <div className='flex gap-2'>
