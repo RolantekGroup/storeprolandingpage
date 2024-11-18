@@ -19,16 +19,15 @@ function Contact() {
             <div className=' mx- mt-8 w-[95%] m-auto pb-11 px-1'>
             <div className='flex justify-center pt-8 pb-4'>
                   <h1 className='text-[30px]  font-extrabold leading-2 text-center'>
-                  Advanced Solutions on Real-time Inventory tracking, AI powered insights, Easy payment options and more.
-                   <br />  Retailer- Manufacturer
-                   connectivity, Mobile-friendly Dashboard,Easy payment options and more.
+                  Advanced Solutions on Real-time Inventory Tracking,     <br />  AI Insights, Easy Payments & More
+                
                   </h1>
                  </div>
             <div className='w-full flex flex-col lg:flex-row justify-between bg-green-5 gap-4'>
                 <div className='lg:w-[40%] w-full bg-slate-950 h-[560px] rounded-tr-[40px]'>
                      <div className='px-8 mt-6'>
                         <h1 className='text-2xl text-white font-bold'>Real-Time Inventory Tracking</h1>
-                        <p className=' text-lg text-white leading-1 pt-4'>Stay on top of your stock with instant updates and automated alerts, ensuring you never run out of
+                        <p className='text-sm tracking-wide mt-3 text-gray-100 duration-300'>Stay on top of your stock with instant updates and automated alerts, ensuring you never run out of
                         high-demand products or overstock. Effortlessly manage inventory, reduce waste, and optimize stock
                         levels to drive sales and profitability.</p>
                      </div>
@@ -58,7 +57,7 @@ function Contact() {
      <div className='lg:w-[60%] w-full  bg-slate-950 h-[560px] px-12 py-5'>
      <div className='px- mt-8'>
             <h1 className='text-2xl text-white font-bold'>Mobile-Friendly Dashboard</h1>
-            <p className='text-lg text-white leading-1 pt-4'>Manage your retail business from anywhere with a seamless, mobile-optimized dashboard. Access
+            <p className='text-sm tracking-wide mt-3 text-gray-100 duration-300'>Manage your retail business from anywhere with a seamless, mobile-optimized dashboard. Access
         real-time sales, inventory and performance analytics on-the-go, ensuring total control at your
         fingertips. </p>
         </div>
