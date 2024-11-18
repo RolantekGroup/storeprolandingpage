@@ -19,15 +19,18 @@ function Contact() {
             <div className=' mx- mt-8 w-[95%] m-auto pb-11 px-1'>
             <div className='flex justify-center pt-8 pb-4'>
                   <h1 className='text-[30px]  font-extrabold leading-2 text-center'>
-                  Advanced Analytics Solutions <br /> Autopilot, Predictions, Mobile UI
+                  Advanced Solutions on Real-time Inventory tracking, AI powered insights, Easy payment options and more.
+                   <br />  Retailer- Manufacturer
+                   connectivity, Mobile-friendly Dashboard,Easy payment options and more.
                   </h1>
                  </div>
             <div className='w-full flex flex-col lg:flex-row justify-between bg-green-5 gap-4'>
                 <div className='lg:w-[40%] w-full bg-slate-950 h-[560px] rounded-tr-[40px]'>
                      <div className='px-8 mt-6'>
-                        <h1 className='text-2xl text-white font-bold'>Autopilot</h1>
-                        <p className=' text-lg text-white leading-1 pt-4'>Empower our AI engine to manage the purchase and sale of reserved instances, 
-                          effectively optimizing your AWS expenditure.</p>
+                        <h1 className='text-2xl text-white font-bold'>Real-Time Inventory Tracking</h1>
+                        <p className=' text-lg text-white leading-1 pt-4'>Stay on top of your stock with instant updates and automated alerts, ensuring you never run out of
+                        high-demand products or overstock. Effortlessly manage inventory, reduce waste, and optimize stock
+                        levels to drive sales and profitability.</p>
                      </div>
                      <div className="m-8 flex items-center justify-center">
             <button className="bg-white rounded-[30px] p-2 min-w-[120px] md:w-[25%]">
@@ -54,9 +57,10 @@ function Contact() {
 
      <div className='lg:w-[60%] w-full  bg-slate-950 h-[560px] px-12 py-5'>
      <div className='px- mt-8'>
-            <h1 className='text-2xl text-white font-bold'>Dashboard</h1>
-            <p className='text-lg text-white leading-1 pt-4'>A central hub where users can view and interact with key information,
-            data, and functionalities relevant to their account. </p>
+            <h1 className='text-2xl text-white font-bold'>Mobile-Friendly Dashboard</h1>
+            <p className='text-lg text-white leading-1 pt-4'>Manage your retail business from anywhere with a seamless, mobile-optimized dashboard. Access
+        real-time sales, inventory and performance analytics on-the-go, ensuring total control at your
+        fingertips. </p>
         </div>
 
         <div className='rounded-[50px] mt-3 flex items-center justify-center '>
@@ -75,23 +79,25 @@ function Contact() {
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
 
     <ProjectsCard
-    title="AI data predictions"
-    des="Generation of insightful reports and analytics to provide users with
-    valuable insights into their usage patterns, performance metrics."
+    title="AI-Powered Insights"
+    des="Leverage AI-driven analytics to predict sales trends, optimize pricing, and make smarter business
+        decisions. Get actionable insights in real-time, empowering you to stay ahead of the competition and
+        boost profits."
     src={charts_3}
     link='https://standard-dashboard-git-main-princewill-ogechis-projects.vercel.app/'
     />
     <ProjectsCard
-    title="Mobile Compatibility"
-    des=" Responsive design and mobile-friendly interfaces 
-    to ensure usability across various devices and screen sizes."
+    title="Retailer-Manufacturer Connectivity"
+    des=" Directly connect with manufacturers to receive real-time price updates and market trends. Streamline
+    your supply chain, enhance relationships, and adjust strategies instantly for greater efficiency."
     src={charts_2}
     link=' https://ogechi4.github.io/Image-Search/'
     />
     <ProjectsCard
-    title="Scalability"
-    des="Infrastructure and architecture designed to accommodate growing user demands 
-    and scale resources accordingly performance or reliability. "
+    title="Easy Payment Options"
+    des="Offer fast, secure, and flexible payment options with Rolantek Pay, integrated directly into the
+        platform. Ensure smooth transactions, enhance customer satisfaction, and track payments
+        effortlessly. "
     src={charts_4}
     
     />

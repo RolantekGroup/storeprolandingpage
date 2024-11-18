@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from '../assets/images/Brandmark Vertical.png';
+import logo from '../assets/images/Brandmark Horizontal.png';
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
@@ -13,7 +13,7 @@ const Header = () => {
       <nav className="container mx-auto flex justify-between items-center py-4 px-6">
         {/* Logo */}
         <div className="text-2xl font-bold text-orange-500 flex items-center">
-          <img src={logo} width={60} alt="logo" className="pl-1" />
+          <img src={logo} width={60} alt="logo" className="pl-1 h-16 w-auto" />
           
         </div>
 

@@ -4,7 +4,7 @@ import Media from './Media';
 
 const LeftBanner = () => {
     const [text] = useTypewriter({
-      words: ["Looking to optimise and scale your business operations?", "Retail Polaris is here to help!", ""],
+      words: ["Looking to optimize and scale your RETAIL business operations?", "Retail Polaris is here to help!", ""],
       loop: true,
       typeSpeed: 20,
       deleteSpeed: 10,

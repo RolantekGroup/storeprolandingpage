@@ -12,8 +12,11 @@ function LeftBanner() {
        
         
         <p  className="pt-2 text-xl md:text-xl font-medium">
-        Transform Your Marketing with Our Analytics SaaS: Autopilot, AI Predictions, Scalability, 
-        Mobile-friendly Dashboard, and More for Effective Insights.
+        Transform Your Retail Business with Retail
+      Polaris: Stay ahead of the market with real-time inventory tracking, instant price updates, and AI-
+      powered insights. Connect directly with manufacturers, make smarter decisions, and boost profits—
+      all from an easy-to-use, mobile-friendly dashboard. Retail Polaris gives you everything you need to
+      grow your business effortlessly.
         </p>
           <div>
 
