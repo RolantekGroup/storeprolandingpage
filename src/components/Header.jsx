@@ -5,7 +5,7 @@ import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import Modal from './custom ui/Modal';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
