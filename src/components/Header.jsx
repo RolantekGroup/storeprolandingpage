@@ -15,7 +15,7 @@ const Header = () => {
       <nav className="container mx-auto flex justify-between items-center py-4 px-6">
         {/* Logo */}
         <Link to='/'>
-        <div className="text-2xl font-bold text-orange-500 flex items-center">
+        <div className="text-2xl font-bold  flex items-center">
           <img src={logo} width={60} alt="logo" className="pl-1 h-16 w-auto" />
         </div>
         </Link>
